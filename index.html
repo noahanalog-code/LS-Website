@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lucky Star — A Bed To Sleep In</title>
+
+
+    <style>
+
+        /* =========================================
+           GENERAL PAGE
+           ========================================= */
+
+        body {
+            margin: 0;
+            padding: 0;
+
+            background-color: #000000;
+
+            color: #000000;
+
+            font-family: "Times New Roman", Times, serif;
+
+            font-size: 14px;
+        }
+
+
+        /* =========================================
+           MAIN WEBSITE
+           ========================================= */
+
+        .site {
+            width: 850px;
+
+            margin: 20px auto;
+
+            background-color: #d6d6d6;
+
+            border-top: 3px solid #ffffff;
+            border-left: 3px solid #ffffff;
+
+            border-right: 3px solid #333333;
+            border-bottom: 3px solid #333333;
+        }
+
+
+        /* =========================================
+           TOP HEADER
+           ========================================= */
+
+        .header {
+            background-color: #003366;
+
+            border-bottom: 4px solid #000000;
+
+            padding: 8px;
+        }
+
+
+        .header-table {
+            width: 100%;
+
+            border-collapse: collapse;
+        }
+
+
+        .logo {
+            width: 60%;
+
+            color: white;
+
+            font-family: Arial, Helvetica, sans-serif;
+
+            font-weight: bold;
+
+            font-size: 32px;
+
+            letter-spacing: 3px;
+
+            text-transform: uppercase;
+        }
+
+
+        .logo-small {
+            display: block;
+
+            font-family: "Times New Roman", Times, serif;
+
+            font-size: 11px;
+
+            font-weight: normal;
+
+            letter-spacing: 1px;
+
+            margin-top: 3px;
+        }
+
+
+        .header-links {
+            text-align: right;
+
+            vertical-align: bottom;
+
+            font-family: Arial, Helvetica, sans-serif;
+
+            font-size: 11px;
+        }
+
+
+        .header-links a {
+            color: white;
+
+            text-decoration: none;
+
+            margin-left: 10px;
+        }
+
+
+        .header-links a:hover {
+            text-decoration: underline;
+        }
+
+
+        /* =========================================
+           NAVIGATION BAR
+           ========================================= */
+
+        .navigation {
+            background-color: #999999;
+
+            border-bottom: 2px solid #333333;
+
+            padding: 4px;
+
+            text-align: center;
+        }
+
+
+        .navigation a {
+            display: inline-block;
+
+            background-color: #cccccc;
+
+            color: #000000;
+
+            border-top: 2px solid #ffffff;
+            border-left: 2px solid #ffffff;
+
+            border-right: 2px solid #444444;
+            border-bottom: 2px solid #444444;
+
+            padding: 5px 16px;
+
+            margin: 2px;
+
+            font-family: Arial, Helvetica, sans-serif;
+
+            font-size: 11px;
+
+            font-weight: bold;
+
+            text-decoration: none;
+        }
+
+
+        .navigation a:hover {
+            background-color: #003366;
+
+            color: white;
+        }
+
+
+        /* =========================================
+           BANNER
+           ========================================= */
+
+        .banner {
+            background-color: #000000;
+
+            padding: 8px;
+
+            border-bottom: 3px solid #333333;
+        }
+
+
+        .banner img {
+            display: block;
+
+            width: 100%;
+
+            height: auto;
+
+            border: 1px solid #ffffff;
+        }
+
+
+        /* =========================================
+           CONTENT AREA
+           ========================================= */
+
+        .content {
+            padding: 12px;
+        }
+
+
+        /* =========================================
+           SECTION HEADERS
+           ========================================= */
+
+        .section-header {
+            background-color: #003366;
+
+            color: white;
+
+            font-family: Arial, Helvetica, sans-serif;
+
+            font-size: 14px;
+
+            font-weight: bold;
+
+            padding: 5px 8px;
+
+            border-top: 2px solid #6688aa;
+
+            border-left: 2px solid #6688aa;
+
+            border-right: 2px solid #001122;
+
+            border-bottom: 2px solid #001122;
+
+            margin-bottom: 8px;
+        }
+
+
+        /* =========================================
+           INTRODUCTION
+           ========================================= */
+
+        .intro {
+            background-color: #eeeeee;
+
+            border: 1px solid #777777;
+
+            padding: 12px;
+
+            margin-bottom: 15px;
+        }
+
+
+        .intro h1 {
+            font-family: Arial, Helvetica, sans-serif;
+
+            font-size: 20px;
+
+            margin-top: 0;
+
+            margin-bottom: 5px;
+
+            color: #003366;
+        }
+
+
+        .intro p {
+            margin-bottom: 5px;
+
+            line-height: 1.4;
+        }
+
+
+        /* =========================================
+           VIDEO
+           ========================================= */
+
+        .video-box {
+            background-color: #000000;
+
+            border-top: 3px solid #222222;
+            border-left: 3px solid #222222;
+
+            border-right: 3px solid #ffffff;
+            border-bottom: 3px solid #ffffff;
+
+            padding: 8px;
+
+            margin-bottom: 15px;
+        }
+
+
+        .video {
+            position: relative;
+
+            width: 100%;
+
+            aspect-ratio: 16 / 9;
+
+            background-color: #111111;
+        }
+
+
+        .video iframe {
+            position: absolute;
+
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 100%;
+
+            border: none;
+        }
+
+
+        /* =========================================
+           TWO COLUMN INFORMATION AREA
+           ========================================= */
+
+        .columns {
+            display: table;
+
+            width: 100%;
+
+            border-spacing: 10px 0;
+
+            margin-left: -10px;
+
+            width: calc(100% + 20px);
+        }
+
+
+        .column {
+            display: table-cell;
+
+            width: 50%;
+
+            vertical-align: top;
+        }
+
+
+        .info-box {
+            background-color: #eeeeee;
+
+            border: 1px solid #777777;
+
+            padding: 10px;
+
+            margin-bottom: 15px;
+        }
+
+
+        .info-box h2 {
+            font-family: Arial, Helvetica, sans-serif;
+
+            font-size: 14px;
+
+            color: #003366;
+
+            margin-top: 0;
+
+            border-bottom: 1px dotted #555555;
+
+            padding-bottom: 4px;
+        }
+
+
+        .info-box p {
+            line-height: 1.4;
+
+            margin-bottom: 5px;
+        }
+
+
+        /* =========================================
+           BANDCAMP PLAYER
+           ========================================= */
+
+        .bandcamp-box {
+            background-color: #ffffff;
+
+            border: 1px solid #555555;
+
+            padding: 5px;
+        }
+
+
+        .bandcamp-box iframe {
+            display: block;
+
+            width: 100%;
+
+            height: 120px;
+
+            border: 0;
+        }
+
+
+        /* =========================================
+           BANDCAMP LINK
+           ========================================= */
+
+        .bandcamp-link {
+            display: block;
+
+            text-align: center;
+
+            margin-top: 10px;
+
+            font-family: Arial, Helvetica, sans-serif;
+
+            font-size: 11px;
+
+            font-weight: bold;
+
+            color: #003366;
+        }
+
+
+        /* =========================================
+           LINK BUTTONS
+           ========================================= */
+
+        .old-button {
+            display: block;
+
+            background-color: #cccccc;
+
+            color: #000000;
+
+            text-decoration: none;
+
+            font-family: Arial, Helvetica, sans-serif;
+
+            font-size: 11px;
+
+            font-weight: bold;
+
+            padding: 6px;
+
+            margin-bottom: 5px;
+
+            text-align: center;
+
+            border-top: 2px solid #ffffff;
+            border-left: 2px solid #ffffff;
+
+            border-right: 2px solid #444444;
+            border-bottom: 2px solid #444444;
+        }
+
+
+        .old-button:hover {
+            background-color: #003366;
+
+            color: white;
+        }
+
+
+        /* =========================================
+           NEWS
+           ========================================= */
+
+        .news {
+            background-color: #eeeeee;
+
+            border: 1px solid #777777;
+
+            padding: 10px;
+
+            margin-bottom: 15px;
+        }
+
+
+        .news-item {
+            border-bottom: 1px dotted #777777;
+
+            padding: 5px 0;
+        }
+
+
+        .news-item:last-child {
+            border-bottom: none;
+        }
+
+
+        .date {
+            color: #003366;
+
+            font-family: Arial, Helvetica, sans-serif;
+
+            font-size: 10px;
+
+            font-weight: bold;
+        }
+
+
+        /* =========================================
+           FOOTER
+           ========================================= */
+
+        .footer {
+            background-color: #003366;
+
+            color: white;
+
+            text-align: center;
+
+            font-family: Arial, Helvetica, sans-serif;
+
+            font-size: 10px;
+
+            padding: 15px;
+
+            border-top: 3px solid #000000;
+        }
+
+
+        .footer a {
+            color: white;
+        }
+
+
+        /* =========================================
+           MOBILE
+           ========================================= */
+
+        @media (max-width: 900px) {
+
+            .site {
+                width: 95%;
+
+                margin: 10px auto;
+            }
+
+        }
+
+
+        @media (max-width: 600px) {
+
+            .site {
+                width: 98%;
+            }
+
+
+            .logo {
+                font-size: 22px;
+            }
+
+
+            .header-links {
+                font-size: 9px;
+            }
+
+
+            .navigation a {
+                padding: 5px 8px;
+            }
+
+
+            .columns {
+                display: block;
+
+                width: 100%;
+
+                margin-left: 0;
+            }
+
+
+            .column {
+                display: block;
+
+                width: 100%;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <div class="site">
+
+
+        <!-- =====================================
+             HEADER
+             ===================================== -->
+
+        <header class="header">
+
+            <table class="header-table">
+
+                <tr>
+
+                    <td class="logo">
+
+                        LUCKY STAR
+
+                        <span class="logo-small">
+                            OFFICIAL WORLD WIDE WEB SITE
+                        </span>
+
+                    </td>
+
+
+                    <td class="header-links">
+
+                        <a href="#video">
+                            VIDEO
+                        </a>
+
+                        <a href="#audio">
+                            AUDIO
+                        </a>
+
+                        <a href="#news">
+                            NEWS
+                        </a>
+
+                    </td>
+
+                </tr>
+
+            </table>
+
+        </header>
+
+
+
+        <!-- =====================================
+             NAVIGATION
+             ===================================== -->
+
+        <nav class="navigation">
+
+            <a href="#video">
+                VIDEO
+            </a>
+
+            <a href="#audio">
+                AUDIO
+            </a>
+
+            <a href="#news">
+                NEWS
+            </a>
+
+            <a href="#links">
+                LINKS
+            </a>
+
+        </nav>
+
+
+
+        <!-- =====================================
+             BANNER IMAGE
+             ===================================== -->
+
+        <div class="banner">
+
+            <img
+                src="LS Banner 3.jpg"
+                alt="Lucky Star"
+            >
+
+        </div>
+
+
+
+        <!-- =====================================
+             MAIN CONTENT
+             ===================================== -->
+
+        <main class="content">
+
+
+            <!-- =================================
+                 INTRO
+                 ================================= -->
+
+            <div class="intro">
+
+                <h1>
+                    A BED TO SLEEP IN
+                </h1>
+
+                <p>
+                    Welcome to the official Lucky Star
+                    World Wide Web site.
+                </p>
+
+                <p>
+                    Our newest recording and music video
+                    are now available online.
+                </p>
+
+            </div>
+
+
+
+            <!-- =================================
+                 MUSIC VIDEO
+                 ================================= -->
+
+            <section id="video">
+
+                <div class="section-header">
+
+                    LUCKY STAR — MUSIC VIDEO
+
+                </div>
+
+
+                <div class="video-box">
+
+                    <div class="video">
+
+                        <iframe
+                            src="https://www.youtube.com/embed/r-Y71seruS4"
+                            title="Lucky Star — A Bed To Sleep In"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================
+                 TWO COLUMN AREA
+                 ================================= -->
+
+            <div class="columns">
+
+
+                <!-- =============================
+                     LEFT COLUMN
+                     ============================= -->
+
+                <div class="column">
+
+
+                    <!-- AUDIO -->
+
+                    <section id="audio">
+
+                        <div class="section-header">
+
+                            AUDIO
+
+                        </div>
+
+
+                        <div class="info-box">
+
+                            <h2>
+                                A BED TO SLEEP IN
+                            </h2>
+
+
+                            <p>
+                                Listen to the latest Lucky Star
+                                recording below.
+                            </p>
+
+
+                            <div class="bandcamp-box">
+
+                                <iframe
+                                    style="border: 0; width: 100%; height: 120px;"
+                                    src="https://bandcamp.com/EmbeddedPlayer/track=2707738684/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/"
+                                    seamless>
+
+                                    <a href="https://luckystarband.bandcamp.com/track/a-bed-to-sleep-in">
+                                        A Bed To Sleep In by Lucky Star
+                                    </a>
+
+                                </iframe>
+
+                            </div>
+
+
+                            <a
+                                class="bandcamp-link"
+                                href="https://luckystarband.bandcamp.com/track/a-bed-to-sleep-in"
+                                target="_blank">
+
+                                LISTEN / DOWNLOAD ON BANDCAMP
+
+                            </a>
+
+                        </div>
+
+                    </section>
+
+
+
+                    <!-- NEWS -->
+
+                    <section id="news">
+
+                        <div class="section-header">
+
+                            LATEST NEWS
+
+                        </div>
+
+
+                        <div class="news">
+
+
+                            <div class="news-item">
+
+                                <div class="date">
+                                    AUGUST 21, 2026
+                                </div>
+
+                                NEW LUCKY STAR MUSIC VIDEO
+                                AND SINGLE RELEASED ONLINE.
+
+                            </div>
+
+
+                            <div class="news-item">
+
+                                <div class="date">
+                                    AUGUST 2026
+                                </div>
+
+                                LUCKY STAR WEB SITE
+                                LAUNCHES ON THE WORLD WIDE WEB.
+
+                            </div>
+
+
+                        </div>
+
+                    </section>
+
+
+                </div>
+
+
+
+                <!-- =============================
+                     RIGHT COLUMN
+                     ============================= -->
+
+                <div class="column">
+
+
+                    <section>
+
+                        <div class="section-header">
+
+                            LUCKY STAR ONLINE
+
+                        </div>
+
+
+                        <div class="info-box">
+
+                            <h2>
+                                OFFICIAL LINKS
+                            </h2>
+
+
+                            <a
+                                class="old-button"
+                                href="https://luckystarband.bandcamp.com/track/a-bed-to-sleep-in"
+                                target="_blank">
+
+                                BANDCAMP
+
+                            </a>
+
+
+                            <a
+                                class="old-button"
+                                href="https://www.youtube.com/watch?v=r-Y71seruS4"
+                                target="_blank">
+
+                                YOUTUBE
+
+                            </a>
+
+
+                            <a
+                                class="old-button"
+                                href="https://www.instagram.com/luckystarluckystarluckystar/"
+                                target="_blank">
+
+                                INSTAGRAM
+
+                            </a>
+
+                        </div>
+
+                    </section>
+
+
+
+                    <section id="links">
+
+                        <div class="section-header">
+
+                            SITE INFORMATION
+
+                        </div>
+
+
+                        <div class="info-box">
+
+                            <h2>
+                                ABOUT THIS SITE
+                            </h2>
+
+
+                            <p>
+                                This site is the official
+                                World Wide Web presence of
+                                Lucky Star.
+                            </p>
+
+
+                            <p>
+                                A Bed To Sleep In is available
+                                now through Bandcamp.
+                            </p>
+
+
+                            <p>
+                                Last updated:
+                                <strong>08/21/2026</strong>
+                            </p>
+
+                        </div>
+
+                    </section>
+
+
+                </div>
+
+
+            </div>
+
+
+        </main>
+
+
+
+        <!-- =====================================
+             FOOTER
+             ===================================== -->
+
+        <footer class="footer">
+
+            LUCKY STAR &nbsp; | &nbsp;
+            A BED TO SLEEP IN &nbsp; | &nbsp;
+            2026
+
+            <br><br>
+
+            <a
+                href="https://luckystarband.bandcamp.com/track/a-bed-to-sleep-in"
+                target="_blank">
+
+                Bandcamp
+
+            </a>
+
+            &nbsp; | &nbsp;
+
+            <a
+                href="https://www.youtube.com/watch?v=r-Y71seruS4"
+                target="_blank">
+
+                YouTube
+
+            </a>
+
+            &nbsp; | &nbsp;
+
+            <a
+                href="https://www.instagram.com/luckystarluckystarluckystar/"
+                target="_blank">
+
+                Instagram
+
+            </a>
+
+        </footer>
+
+
+    </div>
+
+
+</body>
+
+</html>
